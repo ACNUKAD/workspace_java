@@ -3,7 +3,6 @@
  * tipo de dao CARRO, da mesma forma que se declaram variáveis
  * 
  */
-
 public class Carro {
 	
 	// defino os atributos (ou seja, a estrutura)
