@@ -5,6 +5,14 @@ public class Empregado {
 	private String nome;
 	private String cargo;
 	private double salario;
+	
+	// vamos criar um método construtor
+	// o cabeçalho dele é diferente dos demais
+	public Empregado(String nome, String cargo, double salario) {
+        this.nome = nome;
+        this.cargo = cargo;
+        this.salario = salario;
+	}
 
 	// vou entao criar métodos para acessar esses atributos
 	// 1 método para modificar o valor (ex: eu posso criar rotinas de validação)
@@ -12,28 +20,30 @@ public class Empregado {
 
 	// "atribuir" em inglês = set
 	// "consultar" em inglês = get
-	public void setNome(String novoNome) {
-		nome = novoNome;
-	}
-
+	
+	// this.nome refere-se ao atributo NOME, equanto que NOME refere-se ao Parâmetro passado
 	public String getNome() {
 		return nome;
 	}
 
-	public void setCargo(String novoCargo) {
-		cargo = novoCargo;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getCargo() {
 		return cargo;
 	}
 
-	public void setSalario(double novoSalario) {
-		salario = novoSalario;
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
 	}
 
 	public double getSalario() {
 		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
 	}
 
 	public void imprimir() {
