@@ -43,7 +43,5 @@ public class FolhaDePagamento {
 					e.calcularImposto(),
 					e.getSalario() - e.calcularImposto());
 		}
-		
 	}
-
 }
